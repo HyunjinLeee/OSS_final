@@ -1,5 +1,6 @@
-#-*- coding: utf-8 -*-
+#-*- coding:utf-8 -*-
 import time
+import os
 import sys
 import random
 from pytz import timezone
@@ -12,17 +13,22 @@ from selenium import webdriver
 import configparser
 from PIL import Image
 
-"""
-[Here is a tutorial](http://www.instructables.com/id/Set-up-Telegram-Bot-on-Raspberry-Pi/)
-"""
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 symbol = ""
 startmessage = "Welcome to HJOSS_bot! \n" \
-        "Please input command like followings \n" \
-        "1. bit -> bitcoin \n" \
-        "2. ethe -> ethereum\n" \
-        "3. date -> Date of today\n" \
-        "4. time -> Current time\n" \
-        "5. If you want to check your timetable, input day of the week like followings\n" \
+        "This is a personal assitant telegram bot.\n" \
+        "Please enter any of the following commands you want. \n" \
+        " -  date -> Date of today\n" \
+        " -  time -> Current time\n" \
+        " -  weather -> Current weather of Seoul\n" \
+        " -  airquality -> Current air quality of Seoul\n" \
+        " -  boxoffice -> Current 2020 Worldwide Box Office\n" \
+        " -  If you want to check your timetable, enter 'timetable' to know the input commands.\n" \
+        " -  To know current price of cryptocurrency, enter 'crypto' to know the input commands."
+       
+tableMsg = "Enter any of the following commands you want.\n" \
         " -  today -> Today's timetable\n" \
         " -  monday -> Monday timetable\n" \
         " -  tuesday  -> Tuesday timetable\n" \
@@ -30,12 +36,19 @@ startmessage = "Welcome to HJOSS_bot! \n" \
         " -  thursday -> Thursday timetable\n" \
         " -  friday -> Friday timetable"
 
-options = webdriver.ChromeOptions()
+cryptoMsg = "Enter any of the following commands you want.\n" \
+        " -  bit -> Bitcoin\n" \
+        " -  ethe -> Ethereun"
 
-options.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36")
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
 
-WeatherURL = 'https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=날씨'
+WeatherURL = 'https://www.timeanddate.com/weather/south-korea/seoul'
+AirURL = 'https://air-quality.com/place/south-korea/seoul/3a8d31c0?lang=en&standard=aqi_us'
+MovieURL = 'https://www.boxofficemojo.com/year/world/2020/?ref_=bo_lnav_hm_shrt'
 
 def gettable(symbol):
     if(symbol == 'monday'):
@@ -62,7 +75,6 @@ def gettable(symbol):
     else:
         table = "\n" \
                 "Today is holiday! There is no schedule today!"
-
     return table
 
 def getprice(symbol):
@@ -97,14 +109,16 @@ def handle(msg):
     elif command == 'time':
         time = gettime('time')
         bot.sendMessage(chat_id, 'It is now %s' %time)
-    elif command == '/random':
-        bot.sendMessage(chat_id, random.randin(1,6))
+    elif command == 'crypto':
+        bot.sendMessage(chat_id, cryptoMsg)
     elif command == 'bit':
         price = getprice("btc")
         bot.sendMessage(chat_id, 'Bitcoin: %s won' %price)
     elif command == 'ethe':
         price = getprice("eth")
         bot.sendMessage(chat_id, 'Ethereum: %s won' %price)
+    elif command == 'timetable':
+        bot.sendMessage(chat_id, tableMsg)
     elif command == 'monday':
         table = gettable('monday')
         bot.sendMessage(chat_id, "Monday's time table is %s" %table)
@@ -125,15 +139,38 @@ def handle(msg):
         table = gettable(day)
         bot.sendMessage(chat_id, "Today's time table is %s" %table)
     elif command == 'weather':
-        driver = webdriver.Chrome('/usr/bin/chromedriver')
+        driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
         driver.implicitly_wait(3)
         driver.get(WeatherURL)
-        screenshot_name = "/home/weather.png"
+        screenshot_name = "/home/pi/bot/OSS_final/weather.png"
         driver.save_screenshot(screenshot_name)
-        img = Image.open('/home/weather.png')
-        cutted_img = img.crop((39,210,622,677))
-        cutted_img.save('/home/weather.png')
-        bot.sendPhoto(chat_id, 'home/weather.png')
+        img = Image.open('/home/pi/bot/OSS_final/weather.png')
+        cutted_img = img.crop((19,215,310,400))
+        cutted_img.save('/home/pi/bot/OSS_final/weather.png')
+        bot.sendMessage(chat_id, "Let me tell you the current weather in Seoul.")
+        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/weather.png',"rb")))
+    elif command == 'airquality':
+        driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
+        driver.implicitly_wait(3)
+        driver.get(AirURL)
+        screenshot_name = "/home/pi/bot/OSS_final/airquality.png"
+        driver.save_screenshot(screenshot_name)
+        img = Image.open('/home/pi/bot/OSS_final/airquality.png')
+        cutted_img = img.crop((30,140,750,575))
+        cutted_img.save('/home/pi/bot/OSS_final/airquality.png')
+        bot.sendMessage(chat_id, "Let me tell you the current air quality in Seoul.")
+        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/airquality.png',"rb")))
+    elif command == 'boxoffice':
+        driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
+        driver.implicitly_wait(3)
+        driver.get(MovieURL)
+        screenshot_name = "/home/pi/bot/OSS_final/movie.png"
+        driver.save_screenshot(screenshot_name)
+        img = Image.open('/home/pi/bot/OSS_final/movie.png')
+        cutted_img = img.crop((10,180,750,585))
+        cutted_img.save('/home/pi/bot/OSS_final/movie.png')
+        bot.sendMessage(chat_id, "Let me tell you the current 2020 Worldwide Box Office.")
+        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/movie.png',"rb")))
 
 
     else:
