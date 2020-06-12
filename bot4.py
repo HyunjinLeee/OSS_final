@@ -13,10 +13,6 @@ from selenium import webdriver
 import configparser
 from PIL import Image
 
-"""
-[Here is a tutorial](http://www.instructables.com/id/Set-up-Telegram-Bot-on-Raspberry-Pi/)
-"""
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -26,11 +22,11 @@ startmessage = "Welcome to HJOSS_bot! \n" \
         "Please enter any of the following commands you want. \n" \
         " -  date -> Date of today\n" \
         " -  time -> Current time\n" \
-        " -  If you want to check your timetable, enter 'timetable' to know the input commands.\n" \
-        " -  To know current price of cryptocurrency, enter 'crypto' to know the input commands.\n" \
         " -  weather -> Current weather of Seoul\n" \
         " -  airquality -> Current air quality of Seoul\n" \
-        " -  boxoffice -> Current 2020 Worldwide Box Office"
+        " -  boxoffice -> Current 2020 Worldwide Box Office\n" \
+        " -  If you want to check your timetable, enter 'timetable' to know the input commands.\n" \
+        " -  To know current price of cryptocurrency, enter 'crypto' to know the input commands."
        
 tableMsg = "Enter any of the following commands you want.\n" \
         " -  today -> Today's timetable\n" \
