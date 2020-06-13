@@ -3,13 +3,13 @@
 ## What does this project do?
 This is a personal assistant telegram bot.
 
-With Raspberry Pi and Python in operation, this assistant robot can be used anytime, anywhere in telegram.
+With Raspberry Pi and Python in operation, this assistant bot can be used anytime, anywhere in telegram.
 
 
 ## Why is this project useful?
-* The first time you operate the robot, you will see instructions on how to use it.
-* After that, the robot will inform you of the corresponding information by simply entering the command.
-* You can get the following informations from this robot.
+* The first time you operate the bot, you will see instructions on how to use it.
+* After that, the bot will inform you of the corresponding information by simply entering the command.
+* You can get the following informations from this bot.
  1. Date of today
  2. Current time
  3. Current weather of Seoul
