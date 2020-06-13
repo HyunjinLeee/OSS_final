@@ -10,20 +10,20 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 * After that, the robot will inform you of the corresponding information by simply entering the command.
 * You can get the following informations from this robot.
  1. Date of today
-  2) Current time
-  3) Current weather of Seoul
-  4) Current air quality of Seoul
-  5) Current 2020 Worldwide Box Office
-  6) Personal timetable
-    - Today's timetable
-    - Monday timetable
-    - Tuesday timetable
-    - Wednesday timetable
-    - Thursday timetable
-    - Friday timetable
-  7) Current price of cryptocurrency
-    - Bitcoin
-    - Ethereum
+ 2. Current time
+ 3. Current weather of Seoul
+ 4. Current air quality of Seoul
+ 5. Current 2020 Worldwide Box Office
+ 6. Personal timetable
+     - Today's timetable
+     - Monday timetable
+     - Tuesday timetable
+     - Wednesday timetable
+     - Thursday timetable
+     - Friday timetable
+ 7. Current price of cryptocurrency
+     - Bitcoin
+     - Ethereum
 
 
 ## 3. How do I get started?
@@ -44,10 +44,10 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 4. Create your own telegram account.
 5. In telegram, type 'BotFather' in the search bar.
 6. Enter followings in BotFather to create your own bot.
-  - `/start`
-  - `/newbot`
-  - bot name
-  - username for bot
+   - `/start`
+   - `/newbot`
+   - bot name
+   - username for bot
 7. Get your bot's token to access the HTTP API.
 8. Insert your own token at `bot.py`'s `YOUR_OWN_TOKEN`.
 9. If you want to set your own timetable, modify `tableMsg` part in `bot.py`.
