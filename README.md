@@ -53,7 +53,7 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 8. Insert your own token at `bot.py`'s `YOUR_OWN_TOKEN`.
 9. If you want to set your own timetable, modify `tableMsg` part in `bot.py`.
 10. Enter `python` at your Raspberry pi console.
-11. Enter the followings. In 'YOUR_OWN_TOKEN, insert your own token.
+11. Enter the followings. In 'YOUR_OWN_TOKEN', insert your own token.
     ```
     >>> import telepot
     >>> bot = telepot.Bot('Your_OWN_TOKEN')
