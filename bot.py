@@ -37,8 +37,8 @@ tableMsg = "Enter any of the following commands you want.\n" \
         " -  friday -> Friday timetable"
 
 cryptoMsg = "Enter any of the following commands you want.\n" \
-        " -  bit -> Bitcoin\n" \
-        " -  ethe -> Ethereun"
+        " -  bit -> Current Bitcoin price\n" \
+        " -  ethe -> Current Ethereum price"
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
