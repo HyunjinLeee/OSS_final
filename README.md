@@ -74,4 +74,4 @@ For more help, please send me email. <21400615@handong.edu>
 
 
 ## YouTube Project Description Link
-https://www.youtube.com/watch?v=eXFhyoLHj2M
+https://youtu.be/TKzUXyKVJ0A
