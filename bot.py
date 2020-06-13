@@ -178,8 +178,8 @@ def handle(msg):
     else:
         bot.sendMessage(chat_id, 'I cannot understand')
 
-
-bot = telepot.Bot('1185667712:AAFYzUb4Lf2yWMsivGBYWfRloMXlEWZfmqA')
+TOKEN = YOUR_OWN_TOKEN
+bot = telepot.Bot('TOKEN')
 
 MessageLoop(bot, handle).run_as_thread()
 
