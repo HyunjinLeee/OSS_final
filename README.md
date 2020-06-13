@@ -27,8 +27,8 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 ## 3. How do I get started?
 1. Prepare your own Raspberry pi.
 2. Clone this repository on your Raspberry pi.
-3. Install libraries.
-  ```
+3. Install libraries like followings.
+    ```
     $ sudo apt-get install python-pip
     $ sudo pip install telepot
     $ sudo pip install pytz
@@ -38,7 +38,7 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
     $ sudo apt-get install chromium-chromedriver
     $ sudo apt-get install xvfb
     $ sudo pip install xvfbwrapper
-  ```
+    ```
 4. Create your own telegram account.
 5. In telegram, type 'BotFather' in the search bar.
 6. Enter followings in BotFather to create your own bot.
