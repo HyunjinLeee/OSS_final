@@ -4,11 +4,12 @@
 This is a personal assistant telegram bot.
 With Raspberry Pi and Python in operation, this assistant robot can be used anytime, anywhere.
 
+
 ## 2. Why is this project useful?
 * The first time you operate the robot, you will see instructions on how to use it.
 * After that, the robot will inform you of the corresponding information by simply entering the command.
 * You can get the following informations from this robot.
-  1) Date of today
+ 1. Date of today
   2) Current time
   3) Current weather of Seoul
   4) Current air quality of Seoul
@@ -23,6 +24,7 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
   7) Current price of cryptocurrency
     - Bitcoin
     - Ethereum
+
 
 ## 3. How do I get started?
 1. Prepare your own Raspberry pi.
@@ -60,8 +62,10 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 12. Enter `python bot.py` at your Raspberry pi console. Now the assistant bot is ready.
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
+
 ## 4. Where can I get more help, if I need it?
 For more help, please send me email. <21400615@handong.edu>
+
 
 ## 5. YouTube Project Description Link
 
