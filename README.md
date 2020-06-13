@@ -74,5 +74,4 @@ For more help, please send me email. <21400615@handong.edu>
 
 
 ## YouTube Project Description Link
-<br><a href = "https://www.youtube.com/">Youtube video link</a></br>
-
+https://www.youtube.com/watch?v=eXFhyoLHj2M
