@@ -1,12 +1,12 @@
 # 2020-1 Open Source Software Lab Final Project
 
-## 1. What does this project do?
+## What does this project do?
 This is a personal assistant telegram bot.
 
 With Raspberry Pi and Python in operation, this assistant robot can be used anytime, anywhere.
 
 
-## 2. Why is this project useful?
+## Why is this project useful?
 * The first time you operate the robot, you will see instructions on how to use it.
 * After that, the robot will inform you of the corresponding information by simply entering the command.
 * You can get the following informations from this robot.
@@ -27,7 +27,7 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
      - Ethereum
 
 
-## 3. How do I get started?
+## How do I get started?
 1. Prepare your own Raspberry pi.
 2. Clone this repository on your Raspberry pi.
 3. Install libraries like followings.
@@ -63,15 +63,16 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 12. Enter `python bot.py` at your Raspberry pi console. Now the assistant bot is ready.
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
-## 4. References
+## References
 - Creating new telegrambot using BotFather: https://www.youtube.com/watch?v=eADOMfD90fQ
 - Installing chromium-chromedirver: https://yongbeomkim.github.io/python/selenium-tutorial/
 
 Except these references, all the codes are written by myself.
 
-## 5. Where can I get more help, if I need it?
+## Where can I get more help, if I need it?
 For more help, please send me email. <21400615@handong.edu>
 
 
-## 6. YouTube Project Description Link
+## YouTube Project Description Link
+<br><a href = "https://www.youtube.com/">Youtube video link</a></br>
 
