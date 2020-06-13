@@ -51,7 +51,7 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
    + username for bot
 7. Get your bot's token to access the HTTP API.
 8. Insert your own token at `bot.py`'s `YOUR_OWN_TOKEN`.
-9. If you want to set your own timetable, modify `tableMsg` part in `bot.py`.
+9. If you want to set your own timetable, modify `gettable` part in `bot.py`.
 10. Enter `python` at your Raspberry pi console.
 11. Enter the followings. In 'YOUR_OWN_TOKEN', insert your own token.
     ```
