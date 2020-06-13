@@ -63,10 +63,14 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 12. Enter `python bot.py` at your Raspberry pi console. Now the assistant bot is ready.
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
+## 4. References
+Creating new telegrambot using BotFather: https://www.youtube.com/watch?v=eADOMfD90fQ
+Installing chromium-chromedirver: https://yongbeomkim.github.io/python/selenium-tutorial/
+Except these references, all the codes are written by myself.
 
-## 4. Where can I get more help, if I need it?
+## 5. Where can I get more help, if I need it?
 For more help, please send me email. <21400615@handong.edu>
 
 
-## 5. YouTube Project Description Link
+## 6. YouTube Project Description Link
 
