@@ -7,7 +7,7 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 
 
 ## Why is this project useful?
-* The first time you operate the bot, you will see instructions on how to use it.
+* The first time you operate the bot, you will see instructions about how to use it.
 * After that, the bot will inform you of the corresponding information by simply entering the command.
 * You can get the following informations from this bot.
  1. Date of today
