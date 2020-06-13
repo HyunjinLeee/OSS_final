@@ -18,7 +18,7 @@ sys.setdefaultencoding('utf-8')
 
 symbol = ""
 startmessage = "Welcome to HJOSS_bot! \n" \
-        "This is a personal assitant telegram bot.\n" \
+        "This is a personal assistant telegram bot.\n" \
         "Please enter any of the following commands you want. \n" \
         " -  date -> Date of today\n" \
         " -  time -> Current time\n" \
@@ -138,39 +138,41 @@ def handle(msg):
         day = getday()
         table = gettable(day)
         bot.sendMessage(chat_id, "Today's time table is %s" %table)
+    elif command == 'thankyou':
+        bot.sendMessage(chat_id, "You're welcome!")
     elif command == 'weather':
         driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
-        driver.implicitly_wait(3)
-        driver.get(WeatherURL)
-        screenshot_name = "/home/pi/bot/OSS_final/weather.png"
-        driver.save_screenshot(screenshot_name)
-        img = Image.open('/home/pi/bot/OSS_final/weather.png')
-        cutted_img = img.crop((19,215,310,400))
-        cutted_img.save('/home/pi/bot/OSS_final/weather.png')
         bot.sendMessage(chat_id, "Let me tell you the current weather in Seoul.")
-        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/weather.png',"rb")))
+        driver.get(WeatherURL)
+        screenshot_name = "/home/pi/OSS_final/weather.png"
+        driver.save_screenshot(screenshot_name)
+        bot.sendMessage(chat_id, "Loading...")
+        img = Image.open('/home/pi/OSS_final/weather.png')
+        cutted_img = img.crop((19,215,310,400))
+        cutted_img.save('/home/pi/OSS_final/weather.png')
+        bot.sendPhoto(chat_id, (open('/home/pi/OSS_final/weather.png',"rb")))
     elif command == 'airquality':
         driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
-        driver.implicitly_wait(3)
-        driver.get(AirURL)
-        screenshot_name = "/home/pi/bot/OSS_final/airquality.png"
-        driver.save_screenshot(screenshot_name)
-        img = Image.open('/home/pi/bot/OSS_final/airquality.png')
-        cutted_img = img.crop((30,140,750,575))
-        cutted_img.save('/home/pi/bot/OSS_final/airquality.png')
         bot.sendMessage(chat_id, "Let me tell you the current air quality in Seoul.")
-        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/airquality.png',"rb")))
+        driver.get(AirURL)
+        screenshot_name = "/home/pi/OSS_final/airquality.png"
+        driver.save_screenshot(screenshot_name)
+        bot.sendMessage(chat_id, "Loading...")
+        img = Image.open('/home/pi/OSS_final/airquality.png')
+        cutted_img = img.crop((30,140,750,575))
+        cutted_img.save('/home/pi/OSS_final/airquality.png')
+        bot.sendPhoto(chat_id, (open('/home/pi/OSS_final/airquality.png',"rb")))
     elif command == 'boxoffice':
         driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', chrome_options = chrome_options)
-        driver.implicitly_wait(3)
-        driver.get(MovieURL)
-        screenshot_name = "/home/pi/bot/OSS_final/movie.png"
-        driver.save_screenshot(screenshot_name)
-        img = Image.open('/home/pi/bot/OSS_final/movie.png')
-        cutted_img = img.crop((10,180,750,585))
-        cutted_img.save('/home/pi/bot/OSS_final/movie.png')
         bot.sendMessage(chat_id, "Let me tell you the current 2020 Worldwide Box Office.")
-        bot.sendPhoto(chat_id, (open('/home/pi/bot/OSS_final/movie.png',"rb")))
+        driver.get(MovieURL)
+        screenshot_name = "/home/pi/OSS_final/movie.png"
+        driver.save_screenshot(screenshot_name)
+        bot.sendMessage(chat_id, "Loading...")
+        img = Image.open('/home/pi/OSS_final/movie.png')
+        cutted_img = img.crop((10,180,750,585))
+        cutted_img.save('/home/pi/OSS_final/movie.png')
+        bot.sendPhoto(chat_id, (open('/home/pi/OSS_final/movie.png',"rb")))
 
 
     else:
