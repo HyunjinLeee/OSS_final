@@ -44,10 +44,10 @@ With Raspberry Pi and Python in operation, this assistant robot can be used anyt
 4. Create your own telegram account.
 5. In telegram, type 'BotFather' in the search bar.
 6. Enter followings in BotFather to create your own bot.
-   - `/start`
-   - `/newbot`
-   - bot name
-   - username for bot
+   + `/start`
+   + `/newbot`
+   + bot name
+   + username for bot
 7. Get your bot's token to access the HTTP API.
 8. Insert your own token at `bot.py`'s `YOUR_OWN_TOKEN`.
 9. If you want to set your own timetable, modify `tableMsg` part in `bot.py`.
