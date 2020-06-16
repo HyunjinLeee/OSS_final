@@ -64,7 +64,7 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
 ## References
-- Creating new telegrambot using BotFather and telepot, how to use 'datetime': https://www.youtube.com/watch?v=eADOMfD90fQ
+- [Creating new telegrambot using BotFather and telepot, how to use 'datetime'](https://www.youtube.com/watch?v=eADOMfD90fQ)
 - Installing chromium-chromedirver: https://yongbeomkim.github.io/python/selenium-tutorial/
 - How to capture screenshot from webpage and cut it: https://codingfull.tistory.com/17?category=842946
 - How to change timezone: https://technote.kr/202
