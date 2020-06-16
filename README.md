@@ -64,10 +64,24 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
 ## References
-- Creating new telegrambot using BotFather: https://www.youtube.com/watch?v=eADOMfD90fQ
+- Creating new telegrambot using BotFather and telepot, how to use 'datetime': https://www.youtube.com/watch?v=eADOMfD90fQ
 - Installing chromium-chromedirver: https://yongbeomkim.github.io/python/selenium-tutorial/
+- How to capture screenshot from webpage and cut it: https://codingfull.tistory.com/17?category=842946
+- How to change timezone: https://technote.kr/202
+- Get current price of cryptocurrency(bitcoin, ethereum) from show it: https://okhee.co.kr/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8%EB%B4%872-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%8B%9C%EC%84%B8%EB%B4%87/
 
 Except these references, all the codes are written by myself.
+
+## New work I added to this project
+- Show 'How to use this telegram bot' when starting the bot.
+- Show 'How to show personal timetable', 'How to show current cryptocurrency price' when entering 'timetable', 'crypto'.
+- Get date of today by datetime module and cut it as year-month-date and show it through the telegram bot.
+- Get current time by datetime module and cut it as hour-minute-second and show it through the telegram bot.
+- Make the 'current time' and 'date of today' to be Korea Standard time(KST).
+- Capture weather of Seoul from 'https://www.timeanddate.com/weather/south-korea/seoul' and cut the screenshot into appropriate size and show it through the telegram bot.
+- Capture air quality of Seoul from 'https://air-quality.com/place/south-korea/seoul/3a8d31c0?lang=en&standard=aqi_us' and cut the screenshot into appropriate size and show it through the telegram bot.
+- Capture 2020 Worldwide Box office from 'https://www.boxofficemojo.com/year/world/2020/?ref_=bo_lnav_hm_shrt' and cut the screenshot into appropriate size and show it through the telegram bot.
+- Set personal timetable, and when calling it by the telegram bot, show it through the bot.
 
 ## Where can I get more help, if I need it?
 For more help, please send me email. <21400615@handong.edu>
