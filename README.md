@@ -70,8 +70,6 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 - How to change timezone: https://technote.kr/202
 - Get current price of cryptocurrency(bitcoin, ethereum) from show it: https://okhee.co.kr/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8%EB%B4%872-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%8B%9C%EC%84%B8%EB%B4%87/
 
-Except these references, all the codes are written by myself.
-
 ## New work I added to this project
 - Show 'How to use this telegram bot' when starting the bot.
 - Show 'How to show personal timetable', 'How to show current cryptocurrency price' when entering 'timetable', 'crypto'.
