@@ -71,15 +71,18 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 - [Get price of cryptocurrency](https://okhee.co.kr/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8%EB%B4%872-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%8B%9C%EC%84%B8%EB%B4%87/)
 
 ## New work I added to this project
-- Show 'How to use this telegram bot' when starting the bot.
-- Show 'How to show personal timetable', 'How to show current cryptocurrency price' when entering 'timetable', 'crypto'.
+- Show 'How to use this telegram bot' when starting the bot or entering '/start'.
+- Show 'How to get personal timetable' when entering 'timetable'
+- Show 'How to get current cryptocurrency price' when entering 'crypto'.
 - Get date of today by datetime module and cut it as year-month-date and show it through the telegram bot.
 - Get current time by datetime module and cut it as hour-minute-second and show it through the telegram bot.
 - Make the 'current time' and 'date of today' to be Korea Standard time(KST).
-- Capture weather of Seoul from 'https://www.timeanddate.com/weather/south-korea/seoul' and cut the screenshot into appropriate size and show it through the telegram bot.
-- Capture air quality of Seoul from 'https://air-quality.com/place/south-korea/seoul/3a8d31c0?lang=en&standard=aqi_us' and cut the screenshot into appropriate size and show it through the telegram bot.
-- Capture 2020 Worldwide Box office from 'https://www.boxofficemojo.com/year/world/2020/?ref_=bo_lnav_hm_shrt' and cut the screenshot into appropriate size and show it through the telegram bot.
+- Capture weather of Seoul from 'https://www.timeanddate.com/weather/south-korea/seoul' by selenium and chrome driver module then cut the screenshot into appropriate size by Image module and show it through the telegram bot.
+- Capture air quality of Seoul from 'https://air-quality.com/place/south-korea/seoul/3a8d31c0?lang=en&standard=aqi_us' by selenium and chrome driver module then cut the screenshot into appropriate size by Image module and show it through the telegram bot.
+- Capture 2020 Worldwide Box office from 'https://www.boxofficemojo.com/year/world/2020/?ref_=bo_lnav_hm_shrt' by selenium and chrome driver then cut the screenshot into appropriate size by Image module and show it through the telegram bot.
 - Set personal timetable, and when calling it by the telegram bot, show it through the bot.
+- When entering 'today', find out what day it is today(day of the week), and then show the proper timetable.
+- When entering the day of the week, show the timetable of entered day of the week.
 
 ## Where can I get more help, if I need it?
 For more help, please send me email. <21400615@handong.edu>
