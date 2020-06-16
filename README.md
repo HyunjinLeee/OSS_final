@@ -64,11 +64,11 @@ With Raspberry Pi and Python in operation, this assistant bot can be used anytim
 13. In telegram, type your bot name in the search bar. Click `start` button. It is ready to begin!
 
 ## References
-- [Creating new telegrambot using BotFather and telepot, how to use 'datetime'](https://www.youtube.com/watch?v=eADOMfD90fQ)
-- Installing chromium-chromedirver: https://yongbeomkim.github.io/python/selenium-tutorial/
-- How to capture screenshot from webpage and cut it: https://codingfull.tistory.com/17?category=842946
-- How to change timezone: https://technote.kr/202
-- Get price of cryptocurrency: https://okhee.co.kr/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8%EB%B4%872-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%8B%9C%EC%84%B8%EB%B4%87/
+- [How to use BotFather, telepot, 'datetime'](https://www.youtube.com/watch?v=eADOMfD90fQ)
+- [Installing chromium-chromedirver](https://yongbeomkim.github.io/python/selenium-tutorial/)
+- [How to capture screenshot from webpage and cut it](https://codingfull.tistory.com/17?category=842946)
+- [How to change timezone](https://technote.kr/202)
+- [Get price of cryptocurrency](https://okhee.co.kr/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8%EB%B4%872-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%8B%9C%EC%84%B8%EB%B4%87/)
 
 ## New work I added to this project
 - Show 'How to use this telegram bot' when starting the bot.
